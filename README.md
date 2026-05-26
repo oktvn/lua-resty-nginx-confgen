@@ -48,7 +48,7 @@ print(nginx:render())
 
 Produces:
 
-```nginx
+```lua
 worker_processes auto;
 events {
   worker_connections 1024;
@@ -68,7 +68,7 @@ http {
 
 ## Examples:
 
-```
+```lua
 local NginxGenerator = require("resty.nginx.confgen")
 
 local config = {
@@ -121,7 +121,7 @@ print(gen:render())
 
 ### Openresty
 
-```
+```lua
 local NginxGenerator = require("resty.nginx.confgen")
 
 local config = {
